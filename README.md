@@ -1,4 +1,4 @@
 # Nexys4
-Проекты для отладочной платы Nexys4 Spartan6
-Project_1 - к плате внешне подключен энкодер, при повороте которого на семисегментом дисплее будет увеличиваться(при повороте по часовой стрелке) или уменьшаться(против часовой) число
-top_modul - корневой file, находится в 
+Projects for the Nexus 4 Spartan 6 debugging board
+Project_1 - an encoder is externally connected to the board, when rotated, the number on the seven-segment display will increase (when rotated clockwise) or decrease (counterclockwise)
+top_model - Entry point, located in ...
