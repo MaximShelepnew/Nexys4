@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/www/Projects/RGB/src/xHdl/verilog/pwm_d.v" into library xil_defaultlib
+ERROR: [VRFC 10-8386] root scope declaration is not allowed in Verilog 95/2K mode [../../../../../../../src/xHdl/verilog/parameters.vh:6]
+ERROR: [VRFC 10-8386] root scope declaration is not allowed in Verilog 95/2K mode [../../../../../../../src/xHdl/verilog/parameters.vh:8]
+INFO: [VRFC 10-311] analyzing module pwm_d
+ERROR: [VRFC 10-8530] module 'pwm_d' is ignored due to previous errors [D:/www/Projects/RGB/src/xHdl/verilog/pwm_d.v:4]

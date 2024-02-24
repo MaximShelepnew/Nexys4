@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/www/Projects/Radar/src/xHdl/verilog/clk_modul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_modul
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/www/Projects/Radar/src/xHdl/verilog/distance_calc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module distance_calc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/www/Projects/Radar/src/xHdl/verilog/top_modul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_modul
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/www/Projects/Radar/src/xHdl/verilog/trig_signal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trig_signal
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/www/Projects/Radar/src/xHdl/verilog/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench

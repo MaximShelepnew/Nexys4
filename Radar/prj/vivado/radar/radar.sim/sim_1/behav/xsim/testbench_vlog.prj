@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../../src/xHdl/verilog/clk_modul.v" \
+"../../../../../../../src/xHdl/verilog/distance_calc.v" \
+"../../../../../../../src/xHdl/verilog/top_modul.v" \
+"../../../../../../../src/xHdl/verilog/trig_signal.v" \
+"../../../../../../../src/xHdl/verilog/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
