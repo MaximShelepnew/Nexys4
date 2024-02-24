@@ -2,12 +2,18 @@
 Projects for the Nexus-4 Artix-7 debugging board
 
 Project_1 - a verilog project that uses a seven-segment indicator to display the number of turns of the KY-040 encoder.
-The entry point of the top_module project is located along the path Project_1/src/xHdl/verilog/top_module.v and contains components such as:'/n'
+The entry point of the top_module project is located along the path Project_1/src/xHdl/verilog/top_module.v and contains components such as:
+
     clock_dff: A module for dividing the clock frequency.
+    
     refreshcounter: A module for generating an indicator refresh signal.
-    encoder: Module for reading signals from the encoder
-    cathode_contr: A module for controlling the cathode terminals of a seven-segment indicator.
+    
+    encoder: Module for reading signals from the encoder 
+    
+    cathode_contr: A module for controlling the cathode terminals of a seven-segment indicator.    
+    
     anode_contr: A module for controlling the terminals of the anodes of a seven-segment indicator.
+    
 To launch a project in the Vivado program, run the file project_1.xpr that is located along the path Project_1/prj/vivado/project_1/project_1.xpr 
 
 RGB - a project with RGB LED control using the KY-040 encoder. 
