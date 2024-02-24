@@ -6,4 +6,4 @@ top_module - Entry point, located in Project_1/src/xHdl/verilog/top_module.v
 
 RGB - RGB LED adjustment using an encoder
 
-Radar - HC-SR04 ultrasonic radar is connected to the board pmod payment to measure the distance to the object. Entry point, located in Project_1/src/xHdl/verilog/top_module.v
+Radar - HC-SR04 ultrasonic radar is connected to the board pmod payment to measure the distance to the object. Entry point, located in Radar/src/xHdl/verilog/top_modul.v
