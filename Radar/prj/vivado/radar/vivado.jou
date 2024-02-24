@@ -3,14 +3,14 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sat Feb 24 15:38:08 2024
-# Process ID: 9264
-# Current directory: D:/www/Projects/Radar/prj/vivado/radar
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3412 D:\www\Projects\Radar\prj\vivado\radar\radar.xpr
-# Log file: D:/www/Projects/Radar/prj/vivado/radar/vivado.log
-# Journal file: D:/www/Projects/Radar/prj/vivado/radar\vivado.jou
+# Start of session at: Sat Feb 24 16:31:29 2024
+# Process ID: 12072
+# Current directory: C:/Users/Home/Documents/GitHub/Nexys4/Radar/prj/vivado/radar
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14364 C:\Users\Home\Documents\GitHub\Nexys4\Radar\prj\vivado\radar\radar.xpr
+# Log file: C:/Users/Home/Documents/GitHub/Nexys4/Radar/prj/vivado/radar/vivado.log
+# Journal file: C:/Users/Home/Documents/GitHub/Nexys4/Radar/prj/vivado/radar\vivado.jou
 # Running On: DESKTOP-48BJ788, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 12, Host memory: 16312 MB
 #-----------------------------------------------------------
 start_gui
-open_project D:/www/Projects/Radar/prj/vivado/radar/radar.xpr
+open_project C:/Users/Home/Documents/GitHub/Nexys4/Radar/prj/vivado/radar/radar.xpr
 update_compile_order -fileset sources_1
