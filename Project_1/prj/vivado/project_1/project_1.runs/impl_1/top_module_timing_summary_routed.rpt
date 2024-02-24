@@ -1,0 +1,986 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Thu Jun 22 14:16:20 2023
+| Host         : DESKTOP-48BJ788 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file top_module_timing_summary_routed.rpt -pb top_module_timing_summary_routed.pb -rpx top_module_timing_summary_routed.rpx -warn_on_violation
+| Design       : top_module
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  35          
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (245)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (77)
+5. checking no_input_delay (3)
+6. checking no_output_delay (12)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (245)
+--------------------------
+ There are 14 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+ There are 21 register/latch pins with no clock driven by root clock pin: clock/counter_reg[10]/Q (HIGH)
+
+ There are 21 register/latch pins with no clock driven by root clock pin: clock/counter_reg[11]/Q (HIGH)
+
+ There are 21 register/latch pins with no clock driven by root clock pin: clock/counter_reg[12]/Q (HIGH)
+
+ There are 21 register/latch pins with no clock driven by root clock pin: clock/counter_reg[13]/Q (HIGH)
+
+ There are 21 register/latch pins with no clock driven by root clock pin: clock/counter_reg[3]/Q (HIGH)
+
+ There are 21 register/latch pins with no clock driven by root clock pin: clock/counter_reg[4]/Q (HIGH)
+
+ There are 21 register/latch pins with no clock driven by root clock pin: clock/counter_reg[5]/Q (HIGH)
+
+ There are 21 register/latch pins with no clock driven by root clock pin: clock/counter_reg[6]/Q (HIGH)
+
+ There are 21 register/latch pins with no clock driven by root clock pin: clock/counter_reg[7]/Q (HIGH)
+
+ There are 21 register/latch pins with no clock driven by root clock pin: clock/counter_reg[8]/Q (HIGH)
+
+ There are 21 register/latch pins with no clock driven by root clock pin: clock/counter_reg[9]/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (77)
+-------------------------------------------------
+ There are 77 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (3)
+------------------------------
+ There are 3 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (12)
+--------------------------------
+ There are 12 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                   89          inf        0.000                      0                   89           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay            89 Endpoints
+Min Delay            89 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 ENCODER/res_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            cathode[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        26.834ns  (logic 9.119ns (33.983%)  route 17.715ns (66.017%))
+  Logic Levels:           24  (CARRY4=6 FDRE=1 LUT2=2 LUT3=2 LUT4=1 LUT5=3 LUT6=8 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y70         FDRE                         0.000     0.000 r  ENCODER/res_reg[3]/C
+    SLICE_X77Y70         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  ENCODER/res_reg[3]/Q
+                         net (fo=30, routed)          1.337     1.793    ENCODER/res_reg[3]
+    SLICE_X73Y70         LUT3 (Prop_lut3_I1_O)        0.124     1.917 f  ENCODER/cathode2__1_carry__1_i_12/O
+                         net (fo=2, routed)           0.824     2.741    ENCODER/cathode2__1_carry__1_i_12_n_0
+    SLICE_X73Y71         LUT5 (Prop_lut5_I4_O)        0.124     2.865 r  ENCODER/cathode2__1_carry__2_i_4/O
+                         net (fo=2, routed)           1.037     3.902    ENCODER/res_reg[9]_0[0]
+    SLICE_X72Y70         LUT6 (Prop_lut6_I0_O)        0.124     4.026 r  ENCODER/cathode2__1_carry__2_i_8/O
+                         net (fo=1, routed)           0.000     4.026    BCD_CONTROLLER/cathode2__50_carry_i_2_0[0]
+    SLICE_X72Y70         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.558 r  BCD_CONTROLLER/cathode2__1_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.558    BCD_CONTROLLER/cathode2__1_carry__2_n_0
+    SLICE_X72Y71         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     4.892 r  BCD_CONTROLLER/cathode2__1_carry__3/O[1]
+                         net (fo=3, routed)           0.837     5.729    ENCODER/cathode2__44_carry[1]
+    SLICE_X74Y70         LUT2 (Prop_lut2_I0_O)        0.303     6.032 r  ENCODER/cathode2__44_carry_i_4/O
+                         net (fo=1, routed)           0.000     6.032    BCD_CONTROLLER/cathode2__50_carry__0_i_3_0[0]
+    SLICE_X74Y70         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.252     6.284 r  BCD_CONTROLLER/cathode2__44_carry/O[0]
+                         net (fo=1, routed)           0.690     6.975    ENCODER/cathode2__50_carry__0[0]
+    SLICE_X75Y70         LUT2 (Prop_lut2_I1_O)        0.295     7.270 r  ENCODER/cathode2__50_carry__0_i_3/O
+                         net (fo=1, routed)           0.000     7.270    BCD_CONTROLLER/cathode_OBUF[6]_inst_i_31[1]
+    SLICE_X75Y70         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     7.910 r  BCD_CONTROLLER/cathode2__50_carry__0/O[3]
+                         net (fo=6, routed)           1.015     8.925    ENCODER/cathode_OBUF[6]_inst_i_14_1[3]
+    SLICE_X78Y69         LUT6 (Prop_lut6_I0_O)        0.306     9.231 r  ENCODER/cathode_OBUF[2]_inst_i_5/O
+                         net (fo=15, routed)          0.823    10.054    BCD_CONTROLLER/cathode1__2_carry__0_i_13_0
+    SLICE_X79Y68         LUT6 (Prop_lut6_I0_O)        0.124    10.178 f  BCD_CONTROLLER/cathode1__2_carry__0_i_17/O
+                         net (fo=2, routed)           0.960    11.139    BCD_CONTROLLER/cathode1__2_carry__0_i_17_n_0
+    SLICE_X79Y66         LUT5 (Prop_lut5_I3_O)        0.124    11.263 r  BCD_CONTROLLER/cathode1__2_carry__0_i_13/O
+                         net (fo=2, routed)           1.019    12.282    BCD_CONTROLLER/cathode1__2_carry__0_i_13_n_0
+    SLICE_X80Y66         LUT3 (Prop_lut3_I0_O)        0.124    12.406 r  BCD_CONTROLLER/cathode1__2_carry__1_i_4/O
+                         net (fo=2, routed)           0.838    13.244    BCD_CONTROLLER/cathode1__2_carry__1_i_4_n_0
+    SLICE_X78Y66         LUT6 (Prop_lut6_I0_O)        0.124    13.368 r  BCD_CONTROLLER/cathode1__2_carry__1_i_8/O
+                         net (fo=1, routed)           0.000    13.368    BCD_CONTROLLER/cathode1__2_carry__1_i_8_n_0
+    SLICE_X78Y66         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    13.881 r  BCD_CONTROLLER/cathode1__2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    13.881    BCD_CONTROLLER/cathode1__2_carry__1_n_0
+    SLICE_X78Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.998 r  BCD_CONTROLLER/cathode1__2_carry__2/CO[3]
+                         net (fo=3, routed)           0.988    14.986    Refresh_wrapper/cathode_OBUF[6]_inst_i_35[0]
+    SLICE_X79Y67         LUT4 (Prop_lut4_I2_O)        0.152    15.138 f  Refresh_wrapper/cathode_OBUF[6]_inst_i_41/O
+                         net (fo=2, routed)           1.140    16.278    BCD_CONTROLLER/cathode_OBUF[6]_inst_i_19_0
+    SLICE_X79Y64         LUT6 (Prop_lut6_I3_O)        0.332    16.610 f  BCD_CONTROLLER/cathode_OBUF[3]_inst_i_9/O
+                         net (fo=3, routed)           0.953    17.563    BCD_CONTROLLER/refreshcounter_reg[1]
+    SLICE_X80Y65         LUT6 (Prop_lut6_I1_O)        0.124    17.687 f  BCD_CONTROLLER/cathode_OBUF[4]_inst_i_17/O
+                         net (fo=1, routed)           0.810    18.497    BCD_CONTROLLER/cathode_OBUF[4]_inst_i_17_n_0
+    SLICE_X80Y64         LUT5 (Prop_lut5_I4_O)        0.124    18.621 r  BCD_CONTROLLER/cathode_OBUF[4]_inst_i_12/O
+                         net (fo=1, routed)           0.941    19.562    ENCODER/cathode_OBUF[4]_inst_i_1_0
+    SLICE_X80Y68         LUT6 (Prop_lut6_I1_O)        0.124    19.686 r  ENCODER/cathode_OBUF[4]_inst_i_7/O
+                         net (fo=1, routed)           0.822    20.508    ENCODER/cathode_OBUF[4]_inst_i_7_n_0
+    SLICE_X82Y68         LUT6 (Prop_lut6_I5_O)        0.124    20.632 r  ENCODER/cathode_OBUF[4]_inst_i_1/O
+                         net (fo=1, routed)           2.679    23.311    cathode_OBUF[4]
+    K3                   OBUF (Prop_obuf_I_O)         3.523    26.834 r  cathode_OBUF[4]_inst/O
+                         net (fo=0)                   0.000    26.834    cathode[4]
+    K3                                                                r  cathode[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ENCODER/res_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            cathode[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        25.971ns  (logic 8.892ns (34.237%)  route 17.079ns (65.763%))
+  Logic Levels:           24  (CARRY4=6 FDRE=1 LUT2=2 LUT3=2 LUT5=2 LUT6=10 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y70         FDRE                         0.000     0.000 r  ENCODER/res_reg[3]/C
+    SLICE_X77Y70         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  ENCODER/res_reg[3]/Q
+                         net (fo=30, routed)          1.337     1.793    ENCODER/res_reg[3]
+    SLICE_X73Y70         LUT3 (Prop_lut3_I1_O)        0.124     1.917 f  ENCODER/cathode2__1_carry__1_i_12/O
+                         net (fo=2, routed)           0.824     2.741    ENCODER/cathode2__1_carry__1_i_12_n_0
+    SLICE_X73Y71         LUT5 (Prop_lut5_I4_O)        0.124     2.865 r  ENCODER/cathode2__1_carry__2_i_4/O
+                         net (fo=2, routed)           1.037     3.902    ENCODER/res_reg[9]_0[0]
+    SLICE_X72Y70         LUT6 (Prop_lut6_I0_O)        0.124     4.026 r  ENCODER/cathode2__1_carry__2_i_8/O
+                         net (fo=1, routed)           0.000     4.026    BCD_CONTROLLER/cathode2__50_carry_i_2_0[0]
+    SLICE_X72Y70         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.558 r  BCD_CONTROLLER/cathode2__1_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.558    BCD_CONTROLLER/cathode2__1_carry__2_n_0
+    SLICE_X72Y71         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     4.892 r  BCD_CONTROLLER/cathode2__1_carry__3/O[1]
+                         net (fo=3, routed)           0.837     5.729    ENCODER/cathode2__44_carry[1]
+    SLICE_X74Y70         LUT2 (Prop_lut2_I0_O)        0.303     6.032 r  ENCODER/cathode2__44_carry_i_4/O
+                         net (fo=1, routed)           0.000     6.032    BCD_CONTROLLER/cathode2__50_carry__0_i_3_0[0]
+    SLICE_X74Y70         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.252     6.284 r  BCD_CONTROLLER/cathode2__44_carry/O[0]
+                         net (fo=1, routed)           0.690     6.975    ENCODER/cathode2__50_carry__0[0]
+    SLICE_X75Y70         LUT2 (Prop_lut2_I1_O)        0.295     7.270 r  ENCODER/cathode2__50_carry__0_i_3/O
+                         net (fo=1, routed)           0.000     7.270    BCD_CONTROLLER/cathode_OBUF[6]_inst_i_31[1]
+    SLICE_X75Y70         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     7.910 r  BCD_CONTROLLER/cathode2__50_carry__0/O[3]
+                         net (fo=6, routed)           1.015     8.925    ENCODER/cathode_OBUF[6]_inst_i_14_1[3]
+    SLICE_X78Y69         LUT6 (Prop_lut6_I0_O)        0.306     9.231 r  ENCODER/cathode_OBUF[2]_inst_i_5/O
+                         net (fo=15, routed)          0.823    10.054    BCD_CONTROLLER/cathode1__2_carry__0_i_13_0
+    SLICE_X79Y68         LUT6 (Prop_lut6_I0_O)        0.124    10.178 f  BCD_CONTROLLER/cathode1__2_carry__0_i_17/O
+                         net (fo=2, routed)           0.960    11.139    BCD_CONTROLLER/cathode1__2_carry__0_i_17_n_0
+    SLICE_X79Y66         LUT5 (Prop_lut5_I3_O)        0.124    11.263 r  BCD_CONTROLLER/cathode1__2_carry__0_i_13/O
+                         net (fo=2, routed)           1.019    12.282    BCD_CONTROLLER/cathode1__2_carry__0_i_13_n_0
+    SLICE_X80Y66         LUT3 (Prop_lut3_I0_O)        0.124    12.406 r  BCD_CONTROLLER/cathode1__2_carry__1_i_4/O
+                         net (fo=2, routed)           0.838    13.244    BCD_CONTROLLER/cathode1__2_carry__1_i_4_n_0
+    SLICE_X78Y66         LUT6 (Prop_lut6_I0_O)        0.124    13.368 r  BCD_CONTROLLER/cathode1__2_carry__1_i_8/O
+                         net (fo=1, routed)           0.000    13.368    BCD_CONTROLLER/cathode1__2_carry__1_i_8_n_0
+    SLICE_X78Y66         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    13.881 r  BCD_CONTROLLER/cathode1__2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    13.881    BCD_CONTROLLER/cathode1__2_carry__1_n_0
+    SLICE_X78Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.998 r  BCD_CONTROLLER/cathode1__2_carry__2/CO[3]
+                         net (fo=3, routed)           1.274    15.271    BCD_CONTROLLER/cathode1__2_carry__2_i_6_0[0]
+    SLICE_X79Y64         LUT6 (Prop_lut6_I4_O)        0.124    15.395 f  BCD_CONTROLLER/cathode_OBUF[0]_inst_i_6/O
+                         net (fo=3, routed)           0.835    16.231    BCD_CONTROLLER/cathode_OBUF[0]_inst_i_6_n_0
+    SLICE_X80Y65         LUT6 (Prop_lut6_I4_O)        0.124    16.355 f  BCD_CONTROLLER/cathode_OBUF[5]_inst_i_20/O
+                         net (fo=1, routed)           0.500    16.855    BCD_CONTROLLER/cathode_OBUF[5]_inst_i_20_n_0
+    SLICE_X81Y65         LUT6 (Prop_lut6_I5_O)        0.124    16.979 r  BCD_CONTROLLER/cathode_OBUF[5]_inst_i_15/O
+                         net (fo=1, routed)           1.021    18.000    ENCODER/cathode_OBUF[5]_inst_i_7_0
+    SLICE_X80Y67         LUT6 (Prop_lut6_I4_O)        0.124    18.124 r  ENCODER/cathode_OBUF[5]_inst_i_12/O
+                         net (fo=1, routed)           0.810    18.934    ENCODER/cathode_OBUF[5]_inst_i_12_n_0
+    SLICE_X80Y68         LUT6 (Prop_lut6_I5_O)        0.124    19.058 r  ENCODER/cathode_OBUF[5]_inst_i_7/O
+                         net (fo=1, routed)           0.771    19.829    ENCODER/cathode_OBUF[5]_inst_i_7_n_0
+    SLICE_X83Y70         LUT6 (Prop_lut6_I5_O)        0.124    19.953 r  ENCODER/cathode_OBUF[5]_inst_i_1/O
+                         net (fo=1, routed)           2.486    22.439    cathode_OBUF[5]
+    M2                   OBUF (Prop_obuf_I_O)         3.532    25.971 r  cathode_OBUF[5]_inst/O
+                         net (fo=0)                   0.000    25.971    cathode[5]
+    M2                                                                r  cathode[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ENCODER/res_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            cathode[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        25.054ns  (logic 8.769ns (35.001%)  route 16.284ns (64.999%))
+  Logic Levels:           23  (CARRY4=6 FDRE=1 LUT2=2 LUT3=2 LUT5=3 LUT6=8 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y70         FDRE                         0.000     0.000 r  ENCODER/res_reg[3]/C
+    SLICE_X77Y70         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  ENCODER/res_reg[3]/Q
+                         net (fo=30, routed)          1.337     1.793    ENCODER/res_reg[3]
+    SLICE_X73Y70         LUT3 (Prop_lut3_I1_O)        0.124     1.917 f  ENCODER/cathode2__1_carry__1_i_12/O
+                         net (fo=2, routed)           0.824     2.741    ENCODER/cathode2__1_carry__1_i_12_n_0
+    SLICE_X73Y71         LUT5 (Prop_lut5_I4_O)        0.124     2.865 r  ENCODER/cathode2__1_carry__2_i_4/O
+                         net (fo=2, routed)           1.037     3.902    ENCODER/res_reg[9]_0[0]
+    SLICE_X72Y70         LUT6 (Prop_lut6_I0_O)        0.124     4.026 r  ENCODER/cathode2__1_carry__2_i_8/O
+                         net (fo=1, routed)           0.000     4.026    BCD_CONTROLLER/cathode2__50_carry_i_2_0[0]
+    SLICE_X72Y70         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.558 r  BCD_CONTROLLER/cathode2__1_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.558    BCD_CONTROLLER/cathode2__1_carry__2_n_0
+    SLICE_X72Y71         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     4.892 r  BCD_CONTROLLER/cathode2__1_carry__3/O[1]
+                         net (fo=3, routed)           0.837     5.729    ENCODER/cathode2__44_carry[1]
+    SLICE_X74Y70         LUT2 (Prop_lut2_I0_O)        0.303     6.032 r  ENCODER/cathode2__44_carry_i_4/O
+                         net (fo=1, routed)           0.000     6.032    BCD_CONTROLLER/cathode2__50_carry__0_i_3_0[0]
+    SLICE_X74Y70         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.252     6.284 r  BCD_CONTROLLER/cathode2__44_carry/O[0]
+                         net (fo=1, routed)           0.690     6.975    ENCODER/cathode2__50_carry__0[0]
+    SLICE_X75Y70         LUT2 (Prop_lut2_I1_O)        0.295     7.270 r  ENCODER/cathode2__50_carry__0_i_3/O
+                         net (fo=1, routed)           0.000     7.270    BCD_CONTROLLER/cathode_OBUF[6]_inst_i_31[1]
+    SLICE_X75Y70         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     7.910 r  BCD_CONTROLLER/cathode2__50_carry__0/O[3]
+                         net (fo=6, routed)           1.015     8.925    ENCODER/cathode_OBUF[6]_inst_i_14_1[3]
+    SLICE_X78Y69         LUT6 (Prop_lut6_I0_O)        0.306     9.231 r  ENCODER/cathode_OBUF[2]_inst_i_5/O
+                         net (fo=15, routed)          0.823    10.054    BCD_CONTROLLER/cathode1__2_carry__0_i_13_0
+    SLICE_X79Y68         LUT6 (Prop_lut6_I0_O)        0.124    10.178 f  BCD_CONTROLLER/cathode1__2_carry__0_i_17/O
+                         net (fo=2, routed)           0.960    11.139    BCD_CONTROLLER/cathode1__2_carry__0_i_17_n_0
+    SLICE_X79Y66         LUT5 (Prop_lut5_I3_O)        0.124    11.263 r  BCD_CONTROLLER/cathode1__2_carry__0_i_13/O
+                         net (fo=2, routed)           1.019    12.282    BCD_CONTROLLER/cathode1__2_carry__0_i_13_n_0
+    SLICE_X80Y66         LUT3 (Prop_lut3_I0_O)        0.124    12.406 r  BCD_CONTROLLER/cathode1__2_carry__1_i_4/O
+                         net (fo=2, routed)           0.838    13.244    BCD_CONTROLLER/cathode1__2_carry__1_i_4_n_0
+    SLICE_X78Y66         LUT6 (Prop_lut6_I0_O)        0.124    13.368 r  BCD_CONTROLLER/cathode1__2_carry__1_i_8/O
+                         net (fo=1, routed)           0.000    13.368    BCD_CONTROLLER/cathode1__2_carry__1_i_8_n_0
+    SLICE_X78Y66         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    13.881 r  BCD_CONTROLLER/cathode1__2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    13.881    BCD_CONTROLLER/cathode1__2_carry__1_n_0
+    SLICE_X78Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.998 r  BCD_CONTROLLER/cathode1__2_carry__2/CO[3]
+                         net (fo=3, routed)           1.274    15.271    BCD_CONTROLLER/cathode1__2_carry__2_i_6_0[0]
+    SLICE_X79Y64         LUT6 (Prop_lut6_I4_O)        0.124    15.395 f  BCD_CONTROLLER/cathode_OBUF[0]_inst_i_6/O
+                         net (fo=3, routed)           0.890    16.285    BCD_CONTROLLER/cathode_OBUF[0]_inst_i_6_n_0
+    SLICE_X79Y67         LUT6 (Prop_lut6_I1_O)        0.124    16.409 r  BCD_CONTROLLER/cathode_OBUF[1]_inst_i_8/O
+                         net (fo=1, routed)           0.964    17.373    ENCODER/cathode_OBUF[1]_inst_i_4_0
+    SLICE_X77Y68         LUT6 (Prop_lut6_I5_O)        0.124    17.497 r  ENCODER/cathode_OBUF[1]_inst_i_5/O
+                         net (fo=1, routed)           0.462    17.959    ENCODER/cathode_OBUF[1]_inst_i_5_n_0
+    SLICE_X81Y68         LUT5 (Prop_lut5_I4_O)        0.124    18.083 r  ENCODER/cathode_OBUF[1]_inst_i_4/O
+                         net (fo=1, routed)           0.660    18.743    ENCODER/cathode_OBUF[1]_inst_i_4_n_0
+    SLICE_X83Y68         LUT6 (Prop_lut6_I5_O)        0.124    18.867 r  ENCODER/cathode_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           2.653    21.520    cathode_OBUF[1]
+    N1                   OBUF (Prop_obuf_I_O)         3.533    25.054 r  cathode_OBUF[1]_inst/O
+                         net (fo=0)                   0.000    25.054    cathode[1]
+    N1                                                                r  cathode[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ENCODER/res_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            cathode[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        25.049ns  (logic 8.996ns (35.914%)  route 16.053ns (64.086%))
+  Logic Levels:           23  (CARRY4=6 FDRE=1 LUT2=2 LUT3=2 LUT4=1 LUT5=3 LUT6=7 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y70         FDRE                         0.000     0.000 r  ENCODER/res_reg[3]/C
+    SLICE_X77Y70         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  ENCODER/res_reg[3]/Q
+                         net (fo=30, routed)          1.337     1.793    ENCODER/res_reg[3]
+    SLICE_X73Y70         LUT3 (Prop_lut3_I1_O)        0.124     1.917 f  ENCODER/cathode2__1_carry__1_i_12/O
+                         net (fo=2, routed)           0.824     2.741    ENCODER/cathode2__1_carry__1_i_12_n_0
+    SLICE_X73Y71         LUT5 (Prop_lut5_I4_O)        0.124     2.865 r  ENCODER/cathode2__1_carry__2_i_4/O
+                         net (fo=2, routed)           1.037     3.902    ENCODER/res_reg[9]_0[0]
+    SLICE_X72Y70         LUT6 (Prop_lut6_I0_O)        0.124     4.026 r  ENCODER/cathode2__1_carry__2_i_8/O
+                         net (fo=1, routed)           0.000     4.026    BCD_CONTROLLER/cathode2__50_carry_i_2_0[0]
+    SLICE_X72Y70         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.558 r  BCD_CONTROLLER/cathode2__1_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.558    BCD_CONTROLLER/cathode2__1_carry__2_n_0
+    SLICE_X72Y71         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     4.892 r  BCD_CONTROLLER/cathode2__1_carry__3/O[1]
+                         net (fo=3, routed)           0.837     5.729    ENCODER/cathode2__44_carry[1]
+    SLICE_X74Y70         LUT2 (Prop_lut2_I0_O)        0.303     6.032 r  ENCODER/cathode2__44_carry_i_4/O
+                         net (fo=1, routed)           0.000     6.032    BCD_CONTROLLER/cathode2__50_carry__0_i_3_0[0]
+    SLICE_X74Y70         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.252     6.284 r  BCD_CONTROLLER/cathode2__44_carry/O[0]
+                         net (fo=1, routed)           0.690     6.975    ENCODER/cathode2__50_carry__0[0]
+    SLICE_X75Y70         LUT2 (Prop_lut2_I1_O)        0.295     7.270 r  ENCODER/cathode2__50_carry__0_i_3/O
+                         net (fo=1, routed)           0.000     7.270    BCD_CONTROLLER/cathode_OBUF[6]_inst_i_31[1]
+    SLICE_X75Y70         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     7.910 r  BCD_CONTROLLER/cathode2__50_carry__0/O[3]
+                         net (fo=6, routed)           1.015     8.925    ENCODER/cathode_OBUF[6]_inst_i_14_1[3]
+    SLICE_X78Y69         LUT6 (Prop_lut6_I0_O)        0.306     9.231 r  ENCODER/cathode_OBUF[2]_inst_i_5/O
+                         net (fo=15, routed)          0.823    10.054    BCD_CONTROLLER/cathode1__2_carry__0_i_13_0
+    SLICE_X79Y68         LUT6 (Prop_lut6_I0_O)        0.124    10.178 f  BCD_CONTROLLER/cathode1__2_carry__0_i_17/O
+                         net (fo=2, routed)           0.960    11.139    BCD_CONTROLLER/cathode1__2_carry__0_i_17_n_0
+    SLICE_X79Y66         LUT5 (Prop_lut5_I3_O)        0.124    11.263 r  BCD_CONTROLLER/cathode1__2_carry__0_i_13/O
+                         net (fo=2, routed)           1.019    12.282    BCD_CONTROLLER/cathode1__2_carry__0_i_13_n_0
+    SLICE_X80Y66         LUT3 (Prop_lut3_I0_O)        0.124    12.406 r  BCD_CONTROLLER/cathode1__2_carry__1_i_4/O
+                         net (fo=2, routed)           0.838    13.244    BCD_CONTROLLER/cathode1__2_carry__1_i_4_n_0
+    SLICE_X78Y66         LUT6 (Prop_lut6_I0_O)        0.124    13.368 r  BCD_CONTROLLER/cathode1__2_carry__1_i_8/O
+                         net (fo=1, routed)           0.000    13.368    BCD_CONTROLLER/cathode1__2_carry__1_i_8_n_0
+    SLICE_X78Y66         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    13.881 r  BCD_CONTROLLER/cathode1__2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    13.881    BCD_CONTROLLER/cathode1__2_carry__1_n_0
+    SLICE_X78Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.998 r  BCD_CONTROLLER/cathode1__2_carry__2/CO[3]
+                         net (fo=3, routed)           0.988    14.986    Refresh_wrapper/cathode_OBUF[6]_inst_i_35[0]
+    SLICE_X79Y67         LUT4 (Prop_lut4_I2_O)        0.152    15.138 f  Refresh_wrapper/cathode_OBUF[6]_inst_i_41/O
+                         net (fo=2, routed)           1.140    16.278    BCD_CONTROLLER/cathode_OBUF[6]_inst_i_19_0
+    SLICE_X79Y64         LUT6 (Prop_lut6_I3_O)        0.332    16.610 f  BCD_CONTROLLER/cathode_OBUF[3]_inst_i_9/O
+                         net (fo=3, routed)           0.620    17.230    Refresh_wrapper/cathode_OBUF[3]_inst_i_2
+    SLICE_X80Y67         LUT5 (Prop_lut5_I1_O)        0.124    17.354 r  Refresh_wrapper/cathode_OBUF[3]_inst_i_6/O
+                         net (fo=1, routed)           0.811    18.165    ENCODER/cathode_OBUF[3]_inst_i_1_0
+    SLICE_X80Y68         LUT6 (Prop_lut6_I5_O)        0.124    18.289 r  ENCODER/cathode_OBUF[3]_inst_i_2/O
+                         net (fo=1, routed)           0.807    19.096    ENCODER/cathode_OBUF[3]_inst_i_2_n_0
+    SLICE_X82Y70         LUT6 (Prop_lut6_I0_O)        0.124    19.220 r  ENCODER/cathode_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           2.304    21.525    cathode_OBUF[3]
+    L4                   OBUF (Prop_obuf_I_O)         3.524    25.049 r  cathode_OBUF[3]_inst/O
+                         net (fo=0)                   0.000    25.049    cathode[3]
+    L4                                                                r  cathode[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ENCODER/res_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            cathode[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        24.786ns  (logic 8.995ns (36.290%)  route 15.791ns (63.710%))
+  Logic Levels:           23  (CARRY4=6 FDRE=1 LUT2=2 LUT3=2 LUT4=1 LUT5=2 LUT6=8 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y70         FDRE                         0.000     0.000 r  ENCODER/res_reg[3]/C
+    SLICE_X77Y70         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  ENCODER/res_reg[3]/Q
+                         net (fo=30, routed)          1.337     1.793    ENCODER/res_reg[3]
+    SLICE_X73Y70         LUT3 (Prop_lut3_I1_O)        0.124     1.917 f  ENCODER/cathode2__1_carry__1_i_12/O
+                         net (fo=2, routed)           0.824     2.741    ENCODER/cathode2__1_carry__1_i_12_n_0
+    SLICE_X73Y71         LUT5 (Prop_lut5_I4_O)        0.124     2.865 r  ENCODER/cathode2__1_carry__2_i_4/O
+                         net (fo=2, routed)           1.037     3.902    ENCODER/res_reg[9]_0[0]
+    SLICE_X72Y70         LUT6 (Prop_lut6_I0_O)        0.124     4.026 r  ENCODER/cathode2__1_carry__2_i_8/O
+                         net (fo=1, routed)           0.000     4.026    BCD_CONTROLLER/cathode2__50_carry_i_2_0[0]
+    SLICE_X72Y70         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.558 r  BCD_CONTROLLER/cathode2__1_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.558    BCD_CONTROLLER/cathode2__1_carry__2_n_0
+    SLICE_X72Y71         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     4.892 r  BCD_CONTROLLER/cathode2__1_carry__3/O[1]
+                         net (fo=3, routed)           0.837     5.729    ENCODER/cathode2__44_carry[1]
+    SLICE_X74Y70         LUT2 (Prop_lut2_I0_O)        0.303     6.032 r  ENCODER/cathode2__44_carry_i_4/O
+                         net (fo=1, routed)           0.000     6.032    BCD_CONTROLLER/cathode2__50_carry__0_i_3_0[0]
+    SLICE_X74Y70         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.252     6.284 r  BCD_CONTROLLER/cathode2__44_carry/O[0]
+                         net (fo=1, routed)           0.690     6.975    ENCODER/cathode2__50_carry__0[0]
+    SLICE_X75Y70         LUT2 (Prop_lut2_I1_O)        0.295     7.270 r  ENCODER/cathode2__50_carry__0_i_3/O
+                         net (fo=1, routed)           0.000     7.270    BCD_CONTROLLER/cathode_OBUF[6]_inst_i_31[1]
+    SLICE_X75Y70         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     7.910 r  BCD_CONTROLLER/cathode2__50_carry__0/O[3]
+                         net (fo=6, routed)           1.015     8.925    ENCODER/cathode_OBUF[6]_inst_i_14_1[3]
+    SLICE_X78Y69         LUT6 (Prop_lut6_I0_O)        0.306     9.231 r  ENCODER/cathode_OBUF[2]_inst_i_5/O
+                         net (fo=15, routed)          0.823    10.054    BCD_CONTROLLER/cathode1__2_carry__0_i_13_0
+    SLICE_X79Y68         LUT6 (Prop_lut6_I0_O)        0.124    10.178 f  BCD_CONTROLLER/cathode1__2_carry__0_i_17/O
+                         net (fo=2, routed)           0.960    11.139    BCD_CONTROLLER/cathode1__2_carry__0_i_17_n_0
+    SLICE_X79Y66         LUT5 (Prop_lut5_I3_O)        0.124    11.263 r  BCD_CONTROLLER/cathode1__2_carry__0_i_13/O
+                         net (fo=2, routed)           1.019    12.282    BCD_CONTROLLER/cathode1__2_carry__0_i_13_n_0
+    SLICE_X80Y66         LUT3 (Prop_lut3_I0_O)        0.124    12.406 r  BCD_CONTROLLER/cathode1__2_carry__1_i_4/O
+                         net (fo=2, routed)           0.838    13.244    BCD_CONTROLLER/cathode1__2_carry__1_i_4_n_0
+    SLICE_X78Y66         LUT6 (Prop_lut6_I0_O)        0.124    13.368 r  BCD_CONTROLLER/cathode1__2_carry__1_i_8/O
+                         net (fo=1, routed)           0.000    13.368    BCD_CONTROLLER/cathode1__2_carry__1_i_8_n_0
+    SLICE_X78Y66         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    13.881 r  BCD_CONTROLLER/cathode1__2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    13.881    BCD_CONTROLLER/cathode1__2_carry__1_n_0
+    SLICE_X78Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.998 f  BCD_CONTROLLER/cathode1__2_carry__2/CO[3]
+                         net (fo=3, routed)           0.988    14.986    Refresh_wrapper/cathode_OBUF[6]_inst_i_35[0]
+    SLICE_X79Y67         LUT4 (Prop_lut4_I2_O)        0.152    15.138 r  Refresh_wrapper/cathode_OBUF[6]_inst_i_41/O
+                         net (fo=2, routed)           0.795    15.933    BCD_CONTROLLER/cathode_OBUF[6]_inst_i_19_0
+    SLICE_X79Y64         LUT6 (Prop_lut6_I5_O)        0.332    16.265 r  BCD_CONTROLLER/cathode_OBUF[6]_inst_i_35/O
+                         net (fo=1, routed)           0.573    16.839    BCD_CONTROLLER/cathode_OBUF[6]_inst_i_35_n_0
+    SLICE_X79Y65         LUT6 (Prop_lut6_I5_O)        0.124    16.963 r  BCD_CONTROLLER/cathode_OBUF[6]_inst_i_19/O
+                         net (fo=1, routed)           0.657    17.619    BCD_CONTROLLER/cathode_OBUF[6]_inst_i_19_n_0
+    SLICE_X81Y66         LUT6 (Prop_lut6_I1_O)        0.124    17.743 f  BCD_CONTROLLER/cathode_OBUF[6]_inst_i_6/O
+                         net (fo=1, routed)           1.091    18.835    ENCODER/cathode[6]
+    SLICE_X82Y69         LUT6 (Prop_lut6_I5_O)        0.124    18.959 r  ENCODER/cathode_OBUF[6]_inst_i_1/O
+                         net (fo=1, routed)           2.304    21.263    cathode_OBUF[6]
+    L6                   OBUF (Prop_obuf_I_O)         3.523    24.786 r  cathode_OBUF[6]_inst/O
+                         net (fo=0)                   0.000    24.786    cathode[6]
+    L6                                                                r  cathode[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ENCODER/res_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            cathode[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        24.279ns  (logic 8.982ns (36.996%)  route 15.297ns (63.004%))
+  Logic Levels:           23  (CARRY4=6 FDRE=1 LUT2=2 LUT3=2 LUT4=1 LUT5=3 LUT6=7 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y70         FDRE                         0.000     0.000 r  ENCODER/res_reg[3]/C
+    SLICE_X77Y70         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  ENCODER/res_reg[3]/Q
+                         net (fo=30, routed)          1.337     1.793    ENCODER/res_reg[3]
+    SLICE_X73Y70         LUT3 (Prop_lut3_I1_O)        0.124     1.917 f  ENCODER/cathode2__1_carry__1_i_12/O
+                         net (fo=2, routed)           0.824     2.741    ENCODER/cathode2__1_carry__1_i_12_n_0
+    SLICE_X73Y71         LUT5 (Prop_lut5_I4_O)        0.124     2.865 r  ENCODER/cathode2__1_carry__2_i_4/O
+                         net (fo=2, routed)           1.037     3.902    ENCODER/res_reg[9]_0[0]
+    SLICE_X72Y70         LUT6 (Prop_lut6_I0_O)        0.124     4.026 r  ENCODER/cathode2__1_carry__2_i_8/O
+                         net (fo=1, routed)           0.000     4.026    BCD_CONTROLLER/cathode2__50_carry_i_2_0[0]
+    SLICE_X72Y70         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.558 r  BCD_CONTROLLER/cathode2__1_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.558    BCD_CONTROLLER/cathode2__1_carry__2_n_0
+    SLICE_X72Y71         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     4.892 r  BCD_CONTROLLER/cathode2__1_carry__3/O[1]
+                         net (fo=3, routed)           0.837     5.729    ENCODER/cathode2__44_carry[1]
+    SLICE_X74Y70         LUT2 (Prop_lut2_I0_O)        0.303     6.032 r  ENCODER/cathode2__44_carry_i_4/O
+                         net (fo=1, routed)           0.000     6.032    BCD_CONTROLLER/cathode2__50_carry__0_i_3_0[0]
+    SLICE_X74Y70         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.252     6.284 r  BCD_CONTROLLER/cathode2__44_carry/O[0]
+                         net (fo=1, routed)           0.690     6.975    ENCODER/cathode2__50_carry__0[0]
+    SLICE_X75Y70         LUT2 (Prop_lut2_I1_O)        0.295     7.270 r  ENCODER/cathode2__50_carry__0_i_3/O
+                         net (fo=1, routed)           0.000     7.270    BCD_CONTROLLER/cathode_OBUF[6]_inst_i_31[1]
+    SLICE_X75Y70         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     7.910 r  BCD_CONTROLLER/cathode2__50_carry__0/O[3]
+                         net (fo=6, routed)           1.015     8.925    ENCODER/cathode_OBUF[6]_inst_i_14_1[3]
+    SLICE_X78Y69         LUT6 (Prop_lut6_I0_O)        0.306     9.231 r  ENCODER/cathode_OBUF[2]_inst_i_5/O
+                         net (fo=15, routed)          0.823    10.054    BCD_CONTROLLER/cathode1__2_carry__0_i_13_0
+    SLICE_X79Y68         LUT6 (Prop_lut6_I0_O)        0.124    10.178 f  BCD_CONTROLLER/cathode1__2_carry__0_i_17/O
+                         net (fo=2, routed)           0.960    11.139    BCD_CONTROLLER/cathode1__2_carry__0_i_17_n_0
+    SLICE_X79Y66         LUT5 (Prop_lut5_I3_O)        0.124    11.263 r  BCD_CONTROLLER/cathode1__2_carry__0_i_13/O
+                         net (fo=2, routed)           1.019    12.282    BCD_CONTROLLER/cathode1__2_carry__0_i_13_n_0
+    SLICE_X80Y66         LUT3 (Prop_lut3_I0_O)        0.124    12.406 r  BCD_CONTROLLER/cathode1__2_carry__1_i_4/O
+                         net (fo=2, routed)           0.838    13.244    BCD_CONTROLLER/cathode1__2_carry__1_i_4_n_0
+    SLICE_X78Y66         LUT6 (Prop_lut6_I0_O)        0.124    13.368 r  BCD_CONTROLLER/cathode1__2_carry__1_i_8/O
+                         net (fo=1, routed)           0.000    13.368    BCD_CONTROLLER/cathode1__2_carry__1_i_8_n_0
+    SLICE_X78Y66         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    13.881 r  BCD_CONTROLLER/cathode1__2_carry__1/CO[3]
+                         net (fo=1, routed)           0.000    13.881    BCD_CONTROLLER/cathode1__2_carry__1_n_0
+    SLICE_X78Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.998 r  BCD_CONTROLLER/cathode1__2_carry__2/CO[3]
+                         net (fo=3, routed)           0.988    14.986    Refresh_wrapper/cathode_OBUF[6]_inst_i_35[0]
+    SLICE_X79Y67         LUT4 (Prop_lut4_I2_O)        0.152    15.138 f  Refresh_wrapper/cathode_OBUF[6]_inst_i_41/O
+                         net (fo=2, routed)           1.140    16.278    BCD_CONTROLLER/cathode_OBUF[6]_inst_i_19_0
+    SLICE_X79Y64         LUT6 (Prop_lut6_I3_O)        0.332    16.610 f  BCD_CONTROLLER/cathode_OBUF[3]_inst_i_9/O
+                         net (fo=3, routed)           0.611    17.221    ENCODER/cathode_OBUF[2]_inst_i_2_3
+    SLICE_X80Y67         LUT6 (Prop_lut6_I2_O)        0.124    17.345 r  ENCODER/cathode_OBUF[2]_inst_i_8/O
+                         net (fo=1, routed)           0.296    17.641    ENCODER/cathode_OBUF[2]_inst_i_8_n_0
+    SLICE_X81Y68         LUT5 (Prop_lut5_I4_O)        0.124    17.765 r  ENCODER/cathode_OBUF[2]_inst_i_2/O
+                         net (fo=1, routed)           0.537    18.302    ENCODER/cathode_OBUF[2]_inst_i_2_n_0
+    SLICE_X82Y69         LUT6 (Prop_lut6_I0_O)        0.124    18.426 r  ENCODER/cathode_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           2.343    20.769    cathode_OBUF[2]
+    L5                   OBUF (Prop_obuf_I_O)         3.510    24.279 r  cathode_OBUF[2]_inst/O
+                         net (fo=0)                   0.000    24.279    cathode[2]
+    L5                                                                r  cathode[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ENCODER/res_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            cathode[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        24.063ns  (logic 9.516ns (39.546%)  route 14.547ns (60.454%))
+  Logic Levels:           21  (CARRY4=5 FDRE=1 LUT2=3 LUT3=3 LUT5=2 LUT6=6 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y70         FDRE                         0.000     0.000 r  ENCODER/res_reg[3]/C
+    SLICE_X77Y70         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  ENCODER/res_reg[3]/Q
+                         net (fo=30, routed)          1.337     1.793    ENCODER/res_reg[3]
+    SLICE_X73Y70         LUT3 (Prop_lut3_I1_O)        0.124     1.917 f  ENCODER/cathode2__1_carry__1_i_12/O
+                         net (fo=2, routed)           0.824     2.741    ENCODER/cathode2__1_carry__1_i_12_n_0
+    SLICE_X73Y71         LUT5 (Prop_lut5_I4_O)        0.124     2.865 r  ENCODER/cathode2__1_carry__2_i_4/O
+                         net (fo=2, routed)           1.037     3.902    ENCODER/res_reg[9]_0[0]
+    SLICE_X72Y70         LUT6 (Prop_lut6_I0_O)        0.124     4.026 r  ENCODER/cathode2__1_carry__2_i_8/O
+                         net (fo=1, routed)           0.000     4.026    BCD_CONTROLLER/cathode2__50_carry_i_2_0[0]
+    SLICE_X72Y70         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.558 r  BCD_CONTROLLER/cathode2__1_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     4.558    BCD_CONTROLLER/cathode2__1_carry__2_n_0
+    SLICE_X72Y71         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     4.892 r  BCD_CONTROLLER/cathode2__1_carry__3/O[1]
+                         net (fo=3, routed)           0.837     5.729    ENCODER/cathode2__44_carry[1]
+    SLICE_X74Y70         LUT2 (Prop_lut2_I0_O)        0.303     6.032 r  ENCODER/cathode2__44_carry_i_4/O
+                         net (fo=1, routed)           0.000     6.032    BCD_CONTROLLER/cathode2__50_carry__0_i_3_0[0]
+    SLICE_X74Y70         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.252     6.284 r  BCD_CONTROLLER/cathode2__44_carry/O[0]
+                         net (fo=1, routed)           0.690     6.975    ENCODER/cathode2__50_carry__0[0]
+    SLICE_X75Y70         LUT2 (Prop_lut2_I1_O)        0.295     7.270 r  ENCODER/cathode2__50_carry__0_i_3/O
+                         net (fo=1, routed)           0.000     7.270    BCD_CONTROLLER/cathode_OBUF[6]_inst_i_31[1]
+    SLICE_X75Y70         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     7.910 r  BCD_CONTROLLER/cathode2__50_carry__0/O[3]
+                         net (fo=6, routed)           0.787     8.697    ENCODER/cathode_OBUF[6]_inst_i_14_1[3]
+    SLICE_X79Y69         LUT6 (Prop_lut6_I5_O)        0.306     9.003 r  ENCODER/cathode1__2_carry_i_10/O
+                         net (fo=10, routed)          0.971     9.974    ENCODER/cathode1__2_carry_i_10_n_0
+    SLICE_X81Y67         LUT3 (Prop_lut3_I1_O)        0.152    10.126 r  ENCODER/cathode1__2_carry__0_i_21/O
+                         net (fo=2, routed)           0.957    11.082    ENCODER/cathode1__2_carry__0_i_21_n_0
+    SLICE_X80Y66         LUT5 (Prop_lut5_I4_O)        0.348    11.430 f  ENCODER/cathode1__2_carry__0_i_12/O
+                         net (fo=2, routed)           0.328    11.758    ENCODER/cathode1__2_carry__0_i_12_n_0
+    SLICE_X79Y65         LUT6 (Prop_lut6_I5_O)        0.328    12.086 r  ENCODER/cathode1__2_carry__0_i_3/O
+                         net (fo=2, routed)           0.664    12.750    ENCODER/res_reg[1]_4[0]
+    SLICE_X78Y65         LUT3 (Prop_lut3_I2_O)        0.124    12.874 r  ENCODER/cathode1__2_carry__0_i_6/O
+                         net (fo=1, routed)           0.000    12.874    BCD_CONTROLLER/cathode_OBUF[0]_inst_i_2_1[1]
+    SLICE_X78Y65         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643    13.517 r  BCD_CONTROLLER/cathode1__2_carry__0/O[3]
+                         net (fo=15, routed)          1.244    14.761    BCD_CONTROLLER/cathode1[7]
+    SLICE_X79Y67         LUT2 (Prop_lut2_I1_O)        0.335    15.096 r  BCD_CONTROLLER/cathode_OBUF[0]_inst_i_7/O
+                         net (fo=1, routed)           0.996    16.091    BCD_CONTROLLER/cathode_OBUF[0]_inst_i_7_n_0
+    SLICE_X80Y65         LUT6 (Prop_lut6_I1_O)        0.326    16.417 f  BCD_CONTROLLER/cathode_OBUF[0]_inst_i_5/O
+                         net (fo=1, routed)           0.548    16.965    BCD_CONTROLLER/cathode_OBUF[0]_inst_i_5_n_0
+    SLICE_X81Y67         LUT6 (Prop_lut6_I1_O)        0.124    17.089 r  BCD_CONTROLLER/cathode_OBUF[0]_inst_i_2/O
+                         net (fo=1, routed)           0.636    17.725    ENCODER/cathode[0]
+    SLICE_X83Y68         LUT6 (Prop_lut6_I4_O)        0.124    17.849 r  ENCODER/cathode_OBUF[0]_inst_i_1/O
+                         net (fo=1, routed)           2.692    20.541    cathode_OBUF[0]
+    L3                   OBUF (Prop_obuf_I_O)         3.522    24.063 r  cathode_OBUF[0]_inst/O
+                         net (fo=0)                   0.000    24.063    cathode[0]
+    L3                                                                r  cathode[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clock/counter_reg[5]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            osc
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.281ns  (logic 4.636ns (55.975%)  route 3.646ns (44.025%))
+  Logic Levels:           5  (FDRE=1 LUT3=1 LUT5=2 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y88         FDRE                         0.000     0.000 r  clock/counter_reg[5]/C
+    SLICE_X84Y88         FDRE (Prop_fdre_C_Q)         0.518     0.518 f  clock/counter_reg[5]/Q
+                         net (fo=2, routed)           0.444     0.962    clock/counter_reg[5]
+    SLICE_X85Y88         LUT3 (Prop_lut3_I1_O)        0.124     1.086 f  clock/osc_OBUF_inst_i_3/O
+                         net (fo=2, routed)           0.646     1.732    clock/osc_OBUF_inst_i_3_n_0
+    SLICE_X85Y89         LUT5 (Prop_lut5_I0_O)        0.150     1.882 r  clock/osc_OBUF_inst_i_2/O
+                         net (fo=1, routed)           0.433     2.315    clock/osc_OBUF_inst_i_2_n_0
+    SLICE_X85Y89         LUT5 (Prop_lut5_I1_O)        0.326     2.641 r  clock/osc_OBUF_inst_i_1/O
+                         net (fo=22, routed)          2.123     4.764    osc_OBUF
+    K2                   OBUF (Prop_obuf_I_O)         3.518     8.281 r  osc_OBUF_inst/O
+                         net (fo=0)                   0.000     8.281    osc
+    K2                                                                r  osc (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Refresh_wrapper/refreshcounter_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            anode[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.150ns  (logic 4.169ns (51.151%)  route 3.981ns (48.849%))
+  Logic Levels:           3  (FDRE=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y68         FDRE                         0.000     0.000 r  Refresh_wrapper/refreshcounter_reg[0]/C
+    SLICE_X84Y68         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  Refresh_wrapper/refreshcounter_reg[0]/Q
+                         net (fo=20, routed)          1.355     1.873    Refresh_wrapper/Q[0]
+    SLICE_X78Y68         LUT2 (Prop_lut2_I0_O)        0.124     1.997 r  Refresh_wrapper/anode_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           2.626     4.623    anode_OBUF[2]
+    M3                   OBUF (Prop_obuf_I_O)         3.527     8.150 r  anode_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     8.150    anode[2]
+    M3                                                                r  anode[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Refresh_wrapper/refreshcounter_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            anode[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.860ns  (logic 4.173ns (60.832%)  route 2.687ns (39.168%))
+  Logic Levels:           3  (FDRE=1 LUT2=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y68         FDRE                         0.000     0.000 r  Refresh_wrapper/refreshcounter_reg[0]/C
+    SLICE_X84Y68         FDRE (Prop_fdre_C_Q)         0.518     0.518 f  Refresh_wrapper/refreshcounter_reg[0]/Q
+                         net (fo=20, routed)          0.786     1.304    Refresh_wrapper/Q[0]
+    SLICE_X82Y67         LUT2 (Prop_lut2_I1_O)        0.124     1.428 r  Refresh_wrapper/anode_OBUF[1]_inst_i_1/O
+                         net (fo=2, routed)           1.901     3.329    anode_OBUF[1]
+    M6                   OBUF (Prop_obuf_I_O)         3.531     6.860 r  anode_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     6.860    anode[1]
+    M6                                                                r  anode[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 ENCODER/rotary_second_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            ENCODER/delay_rotary_second_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.273ns  (logic 0.128ns (46.835%)  route 0.145ns (53.165%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y74         FDRE                         0.000     0.000 r  ENCODER/rotary_second_reg/C
+    SLICE_X77Y74         FDRE (Prop_fdre_C_Q)         0.128     0.128 r  ENCODER/rotary_second_reg/Q
+                         net (fo=3, routed)           0.145     0.273    ENCODER/rotary_second
+    SLICE_X77Y74         FDRE                                         r  ENCODER/delay_rotary_second_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ENCODER/rotary_first_A_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            ENCODER/rotary_first_A_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.354ns  (logic 0.186ns (52.507%)  route 0.168ns (47.493%))
+  Logic Levels:           2  (FDRE=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y74         FDRE                         0.000     0.000 r  ENCODER/rotary_first_A_reg/C
+    SLICE_X77Y74         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  ENCODER/rotary_first_A_reg/Q
+                         net (fo=26, routed)          0.168     0.309    ENCODER/rotary_first_A
+    SLICE_X77Y74         LUT3 (Prop_lut3_I2_O)        0.045     0.354 r  ENCODER/rotary_first_A_i_1/O
+                         net (fo=1, routed)           0.000     0.354    ENCODER/rotary_first_A_i_1_n_0
+    SLICE_X77Y74         FDRE                                         r  ENCODER/rotary_first_A_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ENCODER/rotary_in_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            ENCODER/rotary_second_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.382ns  (logic 0.187ns (48.904%)  route 0.195ns (51.096%))
+  Logic Levels:           2  (FDRE=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y74         FDRE                         0.000     0.000 r  ENCODER/rotary_in_reg[0]/C
+    SLICE_X77Y74         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  ENCODER/rotary_in_reg[0]/Q
+                         net (fo=2, routed)           0.195     0.336    ENCODER/rotary_in[0]
+    SLICE_X77Y74         LUT3 (Prop_lut3_I1_O)        0.046     0.382 r  ENCODER/rotary_second_i_1/O
+                         net (fo=1, routed)           0.000     0.382    ENCODER/rotary_second_i_1_n_0
+    SLICE_X77Y74         FDRE                                         r  ENCODER/rotary_second_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clock/counter_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            clock/counter_reg[6]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.399ns  (logic 0.274ns (68.589%)  route 0.125ns (31.411%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y88         FDRE                         0.000     0.000 r  clock/counter_reg[6]/C
+    SLICE_X84Y88         FDRE (Prop_fdre_C_Q)         0.164     0.164 r  clock/counter_reg[6]/Q
+                         net (fo=2, routed)           0.125     0.289    clock/counter_reg[6]
+    SLICE_X84Y88         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.110     0.399 r  clock/counter_reg[4]_i_1/O[2]
+                         net (fo=1, routed)           0.000     0.399    clock/counter_reg[4]_i_1_n_5
+    SLICE_X84Y88         FDRE                                         r  clock/counter_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Refresh_wrapper/refreshcounter_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            Refresh_wrapper/refreshcounter_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.407ns  (logic 0.207ns (50.914%)  route 0.200ns (49.086%))
+  Logic Levels:           2  (FDRE=1 LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y68         FDRE                         0.000     0.000 r  Refresh_wrapper/refreshcounter_reg[1]/C
+    SLICE_X84Y68         FDRE (Prop_fdre_C_Q)         0.164     0.164 r  Refresh_wrapper/refreshcounter_reg[1]/Q
+                         net (fo=19, routed)          0.200     0.364    Refresh_wrapper/Q[1]
+    SLICE_X84Y68         LUT2 (Prop_lut2_I1_O)        0.043     0.407 r  Refresh_wrapper/refreshcounter[1]_i_1/O
+                         net (fo=1, routed)           0.000     0.407    Refresh_wrapper/refreshcounter[1]_i_1_n_0
+    SLICE_X84Y68         FDRE                                         r  Refresh_wrapper/refreshcounter_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ENCODER/res_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            ENCODER/res_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.407ns  (logic 0.256ns (62.961%)  route 0.151ns (37.039%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X77Y70         FDRE                         0.000     0.000 r  ENCODER/res_reg[0]/C
+    SLICE_X77Y70         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  ENCODER/res_reg[0]/Q
+                         net (fo=35, routed)          0.151     0.292    ENCODER/res_reg[0]
+    SLICE_X77Y70         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.115     0.407 r  ENCODER/res_reg[0]_i_3/O[0]
+                         net (fo=1, routed)           0.000     0.407    ENCODER/res_reg[0]_i_3_n_7
+    SLICE_X77Y70         FDRE                                         r  ENCODER/res_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clock/counter_reg[10]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            clock/counter_reg[4]/R
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.410ns  (logic 0.209ns (50.940%)  route 0.201ns (49.060%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y89         FDRE                         0.000     0.000 r  clock/counter_reg[10]/C
+    SLICE_X84Y89         FDRE (Prop_fdre_C_Q)         0.164     0.164 r  clock/counter_reg[10]/Q
+                         net (fo=3, routed)           0.061     0.225    clock/counter_reg[10]
+    SLICE_X85Y89         LUT6 (Prop_lut6_I4_O)        0.045     0.270 r  clock/counter[0]_i_1/O
+                         net (fo=14, routed)          0.140     0.410    clock/clear
+    SLICE_X84Y88         FDRE                                         r  clock/counter_reg[4]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clock/counter_reg[10]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            clock/counter_reg[5]/R
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.410ns  (logic 0.209ns (50.940%)  route 0.201ns (49.060%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y89         FDRE                         0.000     0.000 r  clock/counter_reg[10]/C
+    SLICE_X84Y89         FDRE (Prop_fdre_C_Q)         0.164     0.164 r  clock/counter_reg[10]/Q
+                         net (fo=3, routed)           0.061     0.225    clock/counter_reg[10]
+    SLICE_X85Y89         LUT6 (Prop_lut6_I4_O)        0.045     0.270 r  clock/counter[0]_i_1/O
+                         net (fo=14, routed)          0.140     0.410    clock/clear
+    SLICE_X84Y88         FDRE                                         r  clock/counter_reg[5]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clock/counter_reg[10]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            clock/counter_reg[6]/R
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.410ns  (logic 0.209ns (50.940%)  route 0.201ns (49.060%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y89         FDRE                         0.000     0.000 r  clock/counter_reg[10]/C
+    SLICE_X84Y89         FDRE (Prop_fdre_C_Q)         0.164     0.164 r  clock/counter_reg[10]/Q
+                         net (fo=3, routed)           0.061     0.225    clock/counter_reg[10]
+    SLICE_X85Y89         LUT6 (Prop_lut6_I4_O)        0.045     0.270 r  clock/counter[0]_i_1/O
+                         net (fo=14, routed)          0.140     0.410    clock/clear
+    SLICE_X84Y88         FDRE                                         r  clock/counter_reg[6]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clock/counter_reg[10]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            clock/counter_reg[7]/R
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.410ns  (logic 0.209ns (50.940%)  route 0.201ns (49.060%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y89         FDRE                         0.000     0.000 r  clock/counter_reg[10]/C
+    SLICE_X84Y89         FDRE (Prop_fdre_C_Q)         0.164     0.164 r  clock/counter_reg[10]/Q
+                         net (fo=3, routed)           0.061     0.225    clock/counter_reg[10]
+    SLICE_X85Y89         LUT6 (Prop_lut6_I4_O)        0.045     0.270 r  clock/counter[0]_i_1/O
+                         net (fo=14, routed)          0.140     0.410    clock/clear
+    SLICE_X84Y88         FDRE                                         r  clock/counter_reg[7]/R
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

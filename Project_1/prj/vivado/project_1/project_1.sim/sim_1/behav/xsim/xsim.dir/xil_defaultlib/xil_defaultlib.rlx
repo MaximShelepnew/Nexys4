@@ -1,0 +1,16 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+D:/www/Projects/Project_1/prj/vivado/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+D:/www/Projects/Project_1/prj/vivado/project_1/project_1.srcs/sim_1/new/testbench.v,1686756592,verilog,,,,testbench,,,../../../../../../../src/xHdl/verilog,,,,,
+D:/www/Projects/Project_1/src/xHdl/verilog/BCD_contr.v,1693661091,verilog,,D:/www/Projects/Project_1/src/xHdl/verilog/anode_contr.v,,BCD_contr,,,../../../../../../../src/xHdl/verilog,,,,,
+D:/www/Projects/Project_1/src/xHdl/verilog/BCD_to_cathodes.v,1686847011,verilog,,D:/www/Projects/Project_1/src/xHdl/verilog/anode_contr.v,,BCD_to_cathodes,,,../../../../../../../src/xHdl/verilog,,,,,
+D:/www/Projects/Project_1/src/xHdl/verilog/anode_contr.v,1687170496,verilog,,D:/www/Projects/Project_1/src/xHdl/verilog/clock_dff.v,,anode_contr,,,../../../../../../../src/xHdl/verilog,,,,,
+D:/www/Projects/Project_1/src/xHdl/verilog/clock_dff.v,1693669437,verilog,,D:/www/Projects/Project_1/src/xHdl/verilog/encoder.v,,clock_dff,,,../../../../../../../src/xHdl/verilog,,,,,
+D:/www/Projects/Project_1/src/xHdl/verilog/dff1.v,1686852808,verilog,,D:/www/Projects/Project_1/src/xHdl/verilog/refreshcounter.v,,dff1,,,../../../../../../../src/xHdl/verilog,,,,,
+D:/www/Projects/Project_1/src/xHdl/verilog/display_7seg.v,1686827534,verilog,,D:/www/Projects/Project_1/prj/vivado/project_1/project_1.srcs/sim_1/new/testbench.v,,display_7seg;hex7seg,,,../../../../../../../src/xHdl/verilog,,,,,
+D:/www/Projects/Project_1/src/xHdl/verilog/encoder.v,1693669083,verilog,,D:/www/Projects/Project_1/src/xHdl/verilog/refreshcounter.v,,encoder,,,../../../../../../../src/xHdl/verilog,,,,,
+D:/www/Projects/Project_1/src/xHdl/verilog/refreshcounter.v,1687169029,verilog,,D:/www/Projects/Project_1/src/xHdl/verilog/top_module.v,,refreshcounter,,,../../../../../../../src/xHdl/verilog,,,,,
+D:/www/Projects/Project_1/src/xHdl/verilog/top_module.v,1693334623,verilog,,D:/www/Projects/Project_1/src/xdc/testbench_dff_clock.v,,top_module,,,../../../../../../../src/xHdl/verilog,,,,,
+D:/www/Projects/Project_1/src/xdc/testbench_dff_clock.v,1687344415,verilog,,,,testbench_dff_clock,,,../../../../../../../src/xHdl/verilog,,,,,

@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/www/Projects/Project_1/src/xHdl/verilog/BCD_contr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD_contr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/www/Projects/Project_1/src/xHdl/verilog/anode_contr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module anode_contr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/www/Projects/Project_1/src/xHdl/verilog/clock_dff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_dff
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/www/Projects/Project_1/src/xHdl/verilog/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/www/Projects/Project_1/src/xHdl/verilog/refreshcounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module refreshcounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/www/Projects/Project_1/src/xHdl/verilog/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/www/Projects/Project_1/src/xdc/testbench_dff_clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench_dff_clock

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/www/Projects/Project_1/prj/vivado/project_1/project_1.sim/sim_1/synth/func/xsim/display_7seg_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display_7seg
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-311] analyzing module glbl

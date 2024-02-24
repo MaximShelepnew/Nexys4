@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../src/xHdl/verilog" \
+"../../../../../../../src/xHdl/verilog/BCD_contr.v" \
+"../../../../../../../src/xHdl/verilog/anode_contr.v" \
+"../../../../../../../src/xHdl/verilog/clock_dff.v" \
+"../../../../../../../src/xHdl/verilog/encoder.v" \
+"../../../../../../../src/xHdl/verilog/refreshcounter.v" \
+"../../../../../../../src/xHdl/verilog/top_module.v" \
+"../../../../../../../src/xdc/testbench_dff_clock.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
