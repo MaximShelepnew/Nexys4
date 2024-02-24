@@ -19,12 +19,12 @@ clock_dff delitel(
  .clk_out(clk_out)
 );
 
-refreshcounter Refresh_wrapper(//разрядность
+refreshcounter Refresh_wrapper(//the bit depth of the number
  .refresh_clock(clk_out),
  .refreshcounter(refreshcounter)
 );
 
-encoder ENCODER(//фиксируем поворот подклбченного по pmod  энкодера
+encoder ENCODER(//fix the rotation of the pmod-connected encoder
  .clk_encod(clk_out),
  .ROT_A(ROT_A),
  .ROT_B(ROT_B),
@@ -33,7 +33,7 @@ encoder ENCODER(//фиксируем поворот подклбченного по pmod  энкодера
 );
 
 
-cathode_contr cathode_contr(//7сегментый дисплей
+cathode_contr cathode_contr(//7 segment display
  .res(res),
  .refreshcounter(refreshcounter),
  .cathode(cathode)

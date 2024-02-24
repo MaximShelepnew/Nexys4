@@ -10,12 +10,12 @@ module cathode_contr(
 
 always@(refreshcounter)
 begin      
-//ïåğåäåëàòü!! äåëåíèå ÷èñëà íà öèôğû
-    case (refreshcounter)//ğàçğÿä
-        2'b00://åäèíèöû, ïåğâûé ğàçğÿä
+//Redo it!! dividing a number by digits
+    case (refreshcounter)//digit of the number
+        2'b00://units, first digit
             begin 
                 case (res%10)
-                    0: cathode = 7'b1000000;//ñåãìåíòû
+                    0: cathode = 7'b1000000;//segments
                     1: cathode = 7'b1111001;
                     2: cathode = 7'b0100100;
                     3: cathode = 7'b0110000;
@@ -29,9 +29,9 @@ begin
                 endcase
             end
         
-        2'b01://äåñÿòêè
+        2'b01://decade
             begin 
-                case (res%100-res%10)//çàìåíèòü òğèããåğàìè
+                case (res%100-res%10)//replace with triggers
                     10:  cathode = 7'b1111001; 
                     20:  cathode = 7'b0100100; 
                     30:  cathode = 7'b0110000; 
@@ -45,7 +45,7 @@ begin
                endcase
             end
 
-        2'b10://ñîòíè
+        2'b10://hundreds
             begin 
                     if (res>=100 && res<=199) cathode = 7'b1111001;
                    else if (res>=200 && res<=299) cathode = 7'b0100100;
@@ -59,7 +59,7 @@ begin
                    else cathode = 7'b1000000;
             end
             
-        2'b11://òûñÿ÷è
+        2'b11://thousands
            
             begin 
                 case (res%10000 - res%1000 - res%100 - res%10)

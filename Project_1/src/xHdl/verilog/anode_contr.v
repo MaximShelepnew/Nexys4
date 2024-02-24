@@ -5,7 +5,7 @@ module anode_contr(
     output reg [7:0] anode = 0
     );
     
-always@(refreshcounter)//разряд
+always@(refreshcounter)//digit of the number
 begin
     case (refreshcounter)
         2'b00:                                         
