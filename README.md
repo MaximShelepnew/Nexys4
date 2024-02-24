@@ -2,8 +2,8 @@
 Projects for the Nexus-4 Artix-7 debugging board
 
 Project_1 - a verilog project that uses a seven-segment indicator to display the number of turns of the KY-040 encoder.
-The entry point of the top_module project is located along the path Project_1/src/xHdl/verilog/top_module.v and contains components such as:
-#    clock_dff: A module for dividing the clock frequency.
+The entry point of the top_module project is located along the path Project_1/src/xHdl/verilog/top_module.v and contains components such as:'/n'
+    clock_dff: A module for dividing the clock frequency.
     refreshcounter: A module for generating an indicator refresh signal.
     encoder: Module for reading signals from the encoder
     cathode_contr: A module for controlling the cathode terminals of a seven-segment indicator.
